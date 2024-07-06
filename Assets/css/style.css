@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.main-title {
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: white;
+    background-color: blue;
+    height: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tree ul {
+    list-style-type: none;
+}
+
+.tree li {
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+}
+
+.tree input {
+    margin-right: 10px;
+}
+
+.tree label {
+    cursor: pointer;
+}
+
+.tree ul ul {
+    display: none;
+}
+
+.tree input:checked + ul {
+    display: block;
+}
