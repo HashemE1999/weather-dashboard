@@ -16,6 +16,29 @@
     align-items: center;
 }
 
+/* styling templates for search bar and button from W3 Schools */
+
+section.city-search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 20%;
+    background: #f1f1f1;
+}
+
+section.city-search button {
+    float: left;
+    width: 7%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
 .tree ul {
     list-style-type: none;
 }
