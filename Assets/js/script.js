@@ -21,3 +21,15 @@ searchButton.addEventListener('click', function () {
             console.error('Error fetching data:', error);
         });
 })
+
+const form = document.querySelector('city-search');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault;
+
+    const formData = new FormData('city-search');
+
+    formData.forEach((value, key) => {
+        localStorage.setItem(key, value);
+    });
+});
